@@ -1,4 +1,8 @@
 # Rock-Paper-Scissors
+UPDATE!!
+The UI is complete. You can visit and play with the computer in the following link:
+
+        https://max-pons.github.io/Rock-Paper-Scissors/
 
 Hello! This is a project from TOP.
 
