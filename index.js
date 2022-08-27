@@ -4,32 +4,32 @@
   function round(playerSelection) {
     
   
-    
+    let pcChoiceDisplay = document.querySelector(`#pcChoiceDisplay`)
     let computerChoice = Math.floor(Math.random() * 4);
     let computerElement;
     let message;
         if (computerChoice == 0) {
             
             computerElement = "WATER";
-       
+            pcChoiceDisplay.src = `images/waterDisplay.png`
         }
 
         else if (computerChoice == 1) {
        
             computerElement = "EARTH";
-        
+            pcChoiceDisplay.src = `images/earthDisplay.png`
         }
         
         else if (computerChoice == 2) {
                 
             computerElement = "FIRE";
-        
+            pcChoiceDisplay.src = `images/fireDisplay.png`
         }
         
         else if (computerChoice == 3) {
                        
             computerElement = "AIR";
-                   
+            pcChoiceDisplay.src = `images/airDisplay.png` 
         }   
                 
         if (computerElement == "WATER" && playerSelection == "WATER"  
@@ -128,7 +128,7 @@ const waterGame = document.querySelector(`#WATER`)
 
     waterGame.addEventListener(`click`, () => {
         gamePoint = round(playerSelection = "WATER");
-    
+        playerChoiceDisplay.src = "images/waterDisplay.png";
         if (gamePoint === "You win! Water beats Earth"){
             ++num;
             ++playerRounds;
@@ -173,7 +173,7 @@ const earthGame = document.querySelector(`#EARTH`)
 
     earthGame.addEventListener(`click`, () => {
         gamePoint = round(playerSelection = "EARTH");
-    
+        playerChoiceDisplay.src = "images/earthDisplay.png";
         if (gamePoint === "You win! Earth beats Fire"){
             ++num;
             ++playerRounds;
@@ -217,7 +217,7 @@ const fireGame = document.querySelector(`#FIRE`)
 
     fireGame.addEventListener(`click`, () => {
         gamePoint = round(playerSelection = "FIRE");
-    
+        playerChoiceDisplay.src = "images/fireDisplay.png";
         if (gamePoint === "You win! Fire beats Air"){
             ++num;
             ++playerRounds;
@@ -265,12 +265,13 @@ const airGame = document.querySelector(`#AIR`)
     
     airGame.addEventListener(`click`, () => {
         gamePoint = round(playerSelection = "AIR");
-    
+        playerChoiceDisplay.src = "images/airDisplay.png";
         if (gamePoint === "You win! Air beats Water"){
             ++num;
             ++playerRounds;
             playerCount.innerHTML = num;
             eventsChanger.innerHTML = gamePoint;
+          
             if (playerRounds === 5){
                 alert("you won the 5 round battle!!")
                 num = 0;
@@ -289,6 +290,7 @@ const airGame = document.querySelector(`#AIR`)
                 ++pcRounds;
                 pcCount.innerHTML = num2;
                 eventsChanger.innerHTML = gamePoint;
+                
                 if (pcRounds === 5){
                     alert("you lost the 5 round battle")
                     num = 0;
@@ -329,7 +331,7 @@ let eventsChanger = document.querySelector(`.events`)
 let playerRounds = 0;
 let pcRounds = 0;
 
-     
+let playerChoiceDisplay = document.querySelector(`#playerChoiceDisplay`)     
 
 
   

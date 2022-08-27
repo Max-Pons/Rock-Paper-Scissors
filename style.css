@@ -7,11 +7,11 @@
    
   }
 html {
-    
+    flex-wrap: wrap; 
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 900px;
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
     align-items: center;
     box-sizing: border-box; 
     flex: 1 2 0;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ body {
 #head,  
 #footer {
    
-  
+    flex-wrap: wrap; 
     width: 550px;
     flex: 1 1 0%;
     font-family: Silkscreen;
@@ -50,7 +50,7 @@ body {
     color: yellow;
     text-shadow: 0px 0px 9px yellow;
     border-radius: 30px;
-    
+    flex-wrap: wrap; 
    
 }
 
@@ -61,7 +61,7 @@ body {
     justify-content: center;
     flex: 10 1 0%;
     background-color: black;
-    
+    flex-wrap: wrap; 
     border-radius: 30px;
     width: 1330px;
     margin-top: 0;
@@ -73,12 +73,12 @@ body {
 #middle #score,
 #middle #game {
     flex: 1 1 0%;
+/*     flex-wrap: wrap;  */
 }
 
 #score {
-    width: 550px;
+    width: 750px;
     display: flex;
-    gap: 70px;
     align-items: center;
     justify-content: center;
     font-family: Silkscreen;
@@ -88,15 +88,60 @@ body {
     box-shadow: 0px 0px 9px yellow;
     border-radius: 9px;
     margin: 40px;
-}
+    flex-direction:column;
+    padding: 2px;
     
-.scorePlayer,
-.scorePc {
+}
+
+#displayContainer {
+    
     display: flex;
-    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex: auto;
+    width: 545px;
     align-items: center;
     justify-content: center;
+    gap: 60px;
 }
+    
+#displayContainer .scorePlayer,
+#displayContainer  .scorePc,
+#displayContainer  h2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#movesDisplay {
+   
+    border-radius: 80px;
+    flex: auto;
+    width: 505px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+#movesDisplay div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex: auto;
+   
+}
+
+.playerGame,
+.pcGame {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 #game {
     width: 550px;
@@ -105,7 +150,7 @@ body {
     justify-content: center;
     padding: 0%;    
     gap: 160px;
-    
+  
     font-family: Shadows Into Light;
 }
 
@@ -113,7 +158,7 @@ body {
     background-color: black;
     border: 0;
     border-radius: 10px;
-
+    flex-wrap: wrap; 
     
 }
 
@@ -139,6 +184,7 @@ body {
     font-family: Shadows Into Light;
     text-shadow: 0px 0px 9.9px yellow;
     color: yellow;
+     flex-wrap: wrap; 
 }
 
 #buttonName {
@@ -148,6 +194,7 @@ body {
 
 #middle .events {
     margin: 0;
+    margin-bottom: 30px;
     padding: 0;
     font-family: Silkscreen;
     text-align: center;
