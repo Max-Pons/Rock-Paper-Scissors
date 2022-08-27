@@ -11,7 +11,7 @@ html {
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-    height: 900px;
+    height: auto;
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
@@ -26,6 +26,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    height: 100vh;
    
     
 }
@@ -59,14 +60,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 10 1 0%;
+    flex: 2 1 0%;
     background-color: black;
     flex-wrap: wrap; 
     border-radius: 30px;
     width: 1330px;
     margin-top: 0;
     margin-bottom: 0px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     box-shadow: 0px 0px 500px blueviolet;
 }
 
@@ -87,7 +88,7 @@ body {
     /* border: 2px blueviolet dotted;  */
     box-shadow: 0px 0px 9px yellow;
     border-radius: 9px;
-    margin: 40px;
+    margin: 20px;
     flex-direction:column;
     padding: 2px;
     
@@ -149,7 +150,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0%;    
-    gap: 160px;
+    gap: 110px;
   
     font-family: Shadows Into Light;
 }
@@ -178,9 +179,9 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-/*     margin: 0; */
-    padding-bottom: 30px;
-    padding-top: 0px;
+    margin: 0; 
+    padding-bottom: 0;
+    padding-top: 2px;
     font-family: Shadows Into Light;
     text-shadow: 0px 0px 9.9px yellow;
     color: yellow;
