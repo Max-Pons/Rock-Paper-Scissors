@@ -4,211 +4,195 @@
 
 * {
     box-sizing: border-box; 
-   
-  }
+}
+
 html {
-    flex-wrap: wrap; 
-    border-radius: 4px;
     display: flex;
-    flex-direction: column;
-    height: auto;
-    background-color: rgb(0, 0, 0);
+    flex-wrap: wrap;
     margin: 0;
-    padding: 0;
-  }
+    height: 100vh;
+}
+
 body {
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box; 
-    flex: 1 2 0;
-    flex-wrap: wrap; 
-    background-size: cover;
+    flex-wrap: wrap;    
     margin: 0;
     padding: 0;
-    height: 105vh;
-   
-    
-}
-
-#head,  
-#footer {
-   
-    flex-wrap: wrap; 
-    width: 550px;
-    flex: 1 1 0%;
-    font-family: Silkscreen;
-    height: fit-content;
-
-}
-
-#head {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    color: yellow;
-    text-shadow: 0px 0px 9px yellow;
-    border-radius: 30px;
-    flex-wrap: wrap; 
-   
-}
-
-#middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 2 1 0%;
     background-color: black;
-    flex-wrap: wrap; 
-    border-radius: 30px;
-    width: 1330px;
-    margin-top: 0;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    box-shadow: 0px 0px 500px blueviolet;
 }
 
-#middle #score,
-#middle #game {
-    flex: 1 1 0%;
-/*     flex-wrap: wrap;  */
+body #left,
+body #right {
+    flex: 1;
+    overflow: hidden;
 }
 
-#score {
-    width: 750px;
+body #center {
+    flex: 2;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    gap: 20px;
+}
+
+#center #head {
     font-family: Silkscreen;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: yellow;
+    text-shadow: 0px 0px 10px yellow;
+}
+
+#center #footer {
+    font-family: Shadows Into Light;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: yellow;
+    text-shadow: 0px 0px 10px yellow;
+}
+
+#center #middleLayer {
+    border-radius: 43px;
+    box-shadow: 0px 0px 1000px blueviolet;
+}
+
+#center #middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+    background-color: black;
+    width: 550px;
+    height: 600px;
+    padding: 40px;
+    gap: 20px;   
+    box-shadow: inset 0px 0px 20px blueviolet;
+}
+
+#middle #game {
+    display: flex;
+    color: yellow;
+    font-family: Shadows Into Light;
+    gap: 5px;
+}
+
+#middle #results {
+    display: flex;
+    color: blueviolet;
+    font-family: Silkscreen;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn img {
+    width: 90px;
+    height: 90px;
+    }
+
+#middle #score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 265px;
+    padding: 10px;
     background-color: black;
     color: blueviolet;
-    /* border: 2px blueviolet dotted;  */
-    box-shadow: 0px 0px 9px yellow;
-    border-radius: 9px;
-    margin: 20px;
-    flex-direction:column;
-    padding: 2px;
-    
+    font-family: Silkscreen;
+    gap: 10px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px yellow;
 }
 
-#displayContainer {
-    
+#middle #game {
     display: flex;
-    margin: 0;
-    padding: 0;
-    flex: auto;
-    width: 545px;
     align-items: center;
-    justify-content: center;
-    gap: 60px;
-}
-    
-#displayContainer .scorePlayer,
-#displayContainer  .scorePc,
-#displayContainer  h2 {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-
+    height: 320px;
 }
 
-#movesDisplay {
-   
-    border-radius: 80px;
-    flex: auto;
-    width: 505px;
-    padding: 0;
-    margin: 0;
-    display: flex;
+#middle #results {
+    height: 60px;
 }
 
-
-#movesDisplay div {
+#score #displayContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    flex: auto;
-   
+    gap: 45px;
+}
+
+#score #movesDisplay {
+    display: flex;
+    gap: 85px;
 }
 
 .playerGame,
 .pcGame {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 3px;
 }
 
+.playerGame #playerChoiceDisplay,
+.pcGame #pcChoiceDisplay{
+    width: 75px;
+    height: 75px;
+}
 
+.scorePlayer,
+.scorePc {
+    display: flex;  
+    gap: 40px;
+}
 
-#game {
-    width: 550px;
+.scorePlayer .playerCounter,
+.scorePc .pcCounter {
+    box-shadow: inset 0px 0px 6px blueviolet;
+    border-radius: 4px;
+    width: 30px;
+}
+
+.scorePlayer .playerCounter,
+.scorePc .pcCounter,
+.scorePc p,
+.scorePlayer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0%;    
-    gap: 110px;
-  
-    font-family: Shadows Into Light;
 }
 
-#game button {
-    background-color: black;
-    border: 0;
-    border-radius: 10px;
-    flex-wrap: wrap; 
-    
+#game .btn #WATER img,
+#game .btn #EARTH img,
+#game .btn #FIRE img,
+#game .btn #AIR img {
+    border-radius: 30px;
 }
 
-#game button:hover { 
-    box-shadow: 1px 1px 9px rgb(0, 0, 0);  
+#game .btn #WATER img:hover,
+#game .btn #EARTH img:hover,
+#game .btn #FIRE img:hover,
+#game .btn #AIR img:hover {
     transform: scale(1.1);
-    border: 0px;
     cursor: pointer;
 }
 
-#game button:active {
-    box-shadow: 1px 1px 9px yellow;  
-    transform: scale(0.99);
+#game .btn {
+    border: 0;
 }
 
-#footer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 0; 
-    padding-bottom: 0;
-    padding-top: 2px;
-    font-family: Shadows Into Light;
-    text-shadow: 0px 0px 9.9px yellow;
-    color: yellow;
-     flex-wrap: wrap; 
-}
-
-#buttonName {
-    text-align: center;
-    color: yellow;
-}
-
-#middle .events {
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
-    font-family: Silkscreen;
-    text-align: center;
-    flex: 1;
-    color: blueviolet;
-}
-
-.playerCounter,
-.pcCounter {
-    border: 3px blueviolet solid;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 0;
+#game .btn #WATER,
+#game .btn #EARTH,
+#game .btn #FIRE,
+#game .btn #AIR {
+    background-color: black;
+    border: 0;
+    border-radius: 30px;
 }
