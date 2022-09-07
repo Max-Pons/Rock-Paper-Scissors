@@ -20,6 +20,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    height: 70vh;
 }
 
 body #left,
@@ -68,7 +69,7 @@ body #center {
     border-radius: 40px;
     background-color: black;
     width: 550px;
-    height: 600px;
+    height: 550px;
     padding: 40px;
     gap: 20px;   
     box-shadow: inset 0px 0px 20px blueviolet;
@@ -94,8 +95,8 @@ body #center {
 }
 
 .btn img {
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     }
 
 #middle #score {
@@ -103,7 +104,7 @@ body #center {
     flex-direction: column;
     align-items: center;
     width: 500px;
-    height: 265px;
+    height: 245px;
     padding: 10px;
     background-color: black;
     color: blueviolet;
@@ -116,7 +117,8 @@ body #center {
 #middle #game {
     display: flex;
     align-items: center;
-    height: 320px;
+    gap: 40px;
+    height: 200px;
 }
 
 #middle #results {
