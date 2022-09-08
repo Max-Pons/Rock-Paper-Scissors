@@ -198,3 +198,39 @@ body #center {
     border: 0;
     border-radius: 30px;
 }
+
+#left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0%;
+    padding-bottom: 30px;
+    padding-left: 0%; 
+}
+
+#left #returnContainer {
+    position: relative;
+    left: 60px;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+#returnContainer button,
+button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 20px;
+    font-family: Silkscreen;
+    color: #efefef;
+    font-size: 30px;
+    padding-bottom: 3px;
+}
